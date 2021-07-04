@@ -1,7 +1,6 @@
 const http = require('http')
+const displayContent = require('./routes.js')
 
-const server = http.createServer((req, res) => {
-  console.log('Joined!')
-})
+const server = http.createServer(displayContent)
 
 server.listen(3001)
